@@ -1557,13 +1557,15 @@
 
 // start page-404
 .page-404__wrapper,
-.about__wrapper{
+.about__wrapper,
+.contact__wrapper{
     background-color: #fff;
     border: 1px solid #dcdcdc;
     margin-bottom: 150px;
 }
 .page-404__head,
-.about__head{
+.about__head,
+.contact__head{
     font-size: 24px;
     color: #444444;
     @include f500;
@@ -1632,6 +1634,210 @@
     }
 }
 // end about page
+// start contact page
+
+.contact__inner{
+    padding: 35px 40px 15px;
+
+}
+.contact__head{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.contact__map{
+    margin-bottom: 50px;
+    iframe{
+        width: 100%;
+        height: 415px;
+    }
+   
+}
+.contact__box{
+    display: flex;
+}
+.contact__info{
+    margin-right: 30px;
+    max-width: 330px;
+    width: 100%;
+}
+.contact__info-item{
+    margin-bottom: 30px;
+    
+}
+.contact__info-title{
+    padding-bottom: 20px;
+    position: relative;
+    font-family: 'Roboto', sans-serif !important;
+    @include f500;
+    font-size: 20px;
+    color: $bg;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    &::after{
+        position: absolute;
+        content: "";
+        background-color: $green;
+        width: 44px;
+        height: 4px;
+        left: 40px;
+        bottom: 0;
+    }
+    &::before{
+        font-family: 'icomoon';
+        color: $green;
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+    }
+}
+.contacts__info-content{
+    padding-left: 40px;
+    color: #707070;
+    max-width: 230px;
+}
+.contact__form-title{
+    margin-bottom: 20px;
+    font-size: 24px;
+    @include f500;
+    color: #333;
+}
+.contact__form-row{
+    display: flex;
+    justify-content: space-between;
+}
+.contact__form{
+    width: 100%;
+    input{
+        border: none;
+        height: 43px;
+        padding-left: 17px;
+        padding-right: 17px;
+        background-color: #f1f4f5;
+        width: 350px;
+        margin-bottom: 30px;
+        display: block;
+        &::placeholder{
+            color: #7a7a7a;
+            font-size: 15px;
+        }
+    }
+    textarea{
+        border: none;
+        padding: 13px 17px;
+        background-color: #f1f4f5;
+        height: 190px;
+        width: 100%;
+        display: block;
+        resize: none;
+        margin-bottom: 23px;
+        &::placeholder{
+            color: #7a7a7a;
+            font-size: 15px;
+        }
+    }
+    button{
+        border: none;
+        background-color: $green;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+        text-align: center;
+        @include f700;
+        padding: 20px 5px;
+        width: 190px;
+    }
+}
+
+
+// end contact page
+// start settings page
+.settings{
+    padding-bottom: 100px;
+}
+.product-one__tabs.settings__tabs{
+    display: flex;
+    .tabs{
+        max-width: 270px;
+        width: 100%;
+        margin-right: 30px;
+        border: 1px solid #dedede;
+        border-bottom: none;
+        text-align: left;
+        display: block;
+        height: 100%;
+        span{
+            display: block;
+            background-color: #fff;
+            border: 1px solid #dedede;
+            padding: 17px 17px 17px 50px;
+            color: #707070;
+            @include f500;
+            font-size: 14px;
+            &.active{
+                border-bottom: 2px solid $green;
+                color: #37474f;
+                &::before{
+                color: $green;
+                }
+            }
+            &::before{
+                left: 24px;
+                color: #444444;
+            }
+        }
+    }
+    .tab_content{
+        width: 100%;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+.page-box{
+    border: 1px solid #dedede;
+    background-color: #fff;
+    min-height: 100%;
+}
+.page-box__title{
+    border-bottom: 1px solid #dedede;
+    padding: 18px 24px;
+    @include f500;
+    color: $bg;
+    font-size: 24px;
+
+}
+.page-box__content{
+    padding: 30px 35px 80px;
+}
+.settings__line{
+    margin-bottom: 21px;
+    align-items: center;
+    display: flex;
+    label{
+        width: 260px;
+        color: #444;
+    }
+    input{
+        max-width: 540px;
+        width: 100%;
+        height: 40px;
+        color: #000;
+        border: 1px solid #dedede;
+        background-color: #f9f9f9;
+        padding: 0px 5px;
+    }
+    select{
+        max-width: 540px;
+        width: 100%;
+        height: 40px;
+        color: #707070;
+        border: 1px solid #dedede;
+        background-color: #f9f9f9;
+        padding: 0px 5px;
+    }
+}
+
+// end settings page
 
 
 
